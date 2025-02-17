@@ -11,6 +11,7 @@ export default async function Home() {
   return (
     <div className="container p-32 flex flex-col items-center bg-muted h-    full space-y-16">
       <Logo />
+      NEXT_PUBLIC_BACKEND_URL={process.env.NEXT_PUBLIC_BACKEND_URL}
       <TodoForm />
       <Separator />
       <TodoList todos={todos} />
