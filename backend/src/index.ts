@@ -1,8 +1,9 @@
-import { Hono } from "hono";
-import todos from "./todos";
+import { Hono } from 'hono'
 
-const app = new Hono();
+const app = new Hono()
 
-app.route("/api/todos", todos);
+app.get('/', (c) => {
+  return c.text('Hello Hono!')
+})
 
-export default app;
+export default app

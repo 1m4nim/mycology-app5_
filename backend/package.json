@@ -1,5 +1,5 @@
 {
-  "name": "mycology-app5",
+  "name": "backend",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy --minify"
